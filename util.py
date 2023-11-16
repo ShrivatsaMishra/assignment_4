@@ -69,8 +69,10 @@ def avg_f1_score(predicted_labels: List[int], true_labels: List[int], classes: L
 
     :return: float
     """
+    # print("Calculating")
     f1_scores = []
     for c in classes:
+        # print(c)
         f1 = f1_score(predicted_labels, true_labels, c)
         # print(f1)
         f1_scores.append(f1)
